@@ -1,0 +1,7 @@
+$colors: () !default;
+$colors: map-merge((
+        "greyish-brown": #523e37,
+        "light-grey": #f1f0e5,
+        "scarlet": #d0021b,
+        "squash": #f5a623,
+), $colors);

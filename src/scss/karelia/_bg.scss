@@ -1,0 +1,22 @@
+html {
+  //height: 100%;
+  //min-height: 100%;
+}
+body {
+  //height: 100%;
+  //min-height: 100%;
+  //padding: $grid-gutter-width 0;
+  color: var(--greyish-brown);
+}
+header {
+  background-image: url("/assets/images/bg_header_footer.png");
+  background-position: top center;
+  background-repeat: repeat-x;
+  padding-top: $grid-gutter-width;
+}
+footer {
+  background-image: url("/assets/images/bg_header_footer.png");
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  padding-bottom: $grid-gutter-width;
+}
