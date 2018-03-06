@@ -3,7 +3,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: ['jquery', './src/app.js'],
+  entry: [
+    // 'jquery',
+    // 'owl.carousel',
+    './src/app.js'
+  ],
   output: {
     path: path.resolve(__dirname, 'assets'),
     filename: 'js/app.js'
@@ -33,8 +37,11 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('css/app.css'),
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery",
+      fancybox: 'fancybox',
+      owlCarousel: 'owl.carousel'
     })
   ]
 };

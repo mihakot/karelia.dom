@@ -20,3 +20,28 @@ footer {
   background-repeat: repeat-x;
   padding-bottom: $grid-gutter-width;
 }
+#sliderImg {
+  img {
+    max-width: 100%;
+  }
+}
+#sliderImg {
+  position: relative;
+}
+#sliderPrev,
+#sliderNext {
+  position: absolute;
+  padding:10px 15px;
+  top:0;
+  bottom:0;
+  font-size:72px;
+  color:var(--white);
+  text-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+#sliderPrev {
+  left:5px;
+}
+#sliderNext {
+  right:5px;
+}
