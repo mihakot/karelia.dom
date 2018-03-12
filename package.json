@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "webpack",
-    "start": "webpack --watch"
+    "test": "webpack --watch"
   },
   "author": "MihaKot <mihakot@gmail.com>",
   "license": "UNLICENSED",

@@ -3892,6 +3892,8 @@ footer {
 
 .text-color-greyish-brown {
   color: var(--greyish-brown); }
+  .text-color-greyish-brown a {
+    color: inherit; }
 
 .text-size-48 {
   font-size: 48px;
@@ -3913,7 +3915,8 @@ footer {
   border-radius: 100px;
   font-size: 24px;
   color: var(--greyish-brown);
-  padding-left: 2.25rem;
+  padding-left: 3rem;
+  padding-right: 1.5rem;
   background-image: url("/assets/images/phone.png");
   background-position: 1.125rem center;
   background-repeat: no-repeat; }
@@ -3927,15 +3930,17 @@ footer {
 .price-block {
   background-color: var(--light-grey);
   border-radius: 8px;
-  font-size: 18px;
-  padding: 21.12px 32px; }
+  font-size: 18px; }
 
 .forsale-block {
   background-color: var(--light-grey);
   border-radius: 8px;
   font-size: 18px;
-  padding: 21.12px 0 10.56px 110px;
+  padding: 21.12px 10.56px 10.56px 110px;
   position: relative; }
+  @media (min-width: 540px) {
+    .forsale-block {
+      padding-left: 150px; } }
   .forsale-block:before {
     content: '';
     position: absolute;
@@ -3946,3 +3951,6 @@ footer {
     background-image: url("/assets/images/saleman.png");
     background-repeat: no-repeat;
     background-position: 0 0; }
+    @media (min-width: 540px) {
+      .forsale-block:before {
+        left: 8px; } }
